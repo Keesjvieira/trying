@@ -32,6 +32,9 @@ body {
   scroll-margin-top: 8rem;
 }
 
+.page.active {
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -125,7 +128,7 @@ body {
   text-align: center;
   line-height: 1;
   font-family: 'satoshi', sans-serif;
-  padding-top: clamp(8rem, 15vw, 30rem);
+  padding-top: 30rem
 }
 
 .hero-sub {
@@ -134,14 +137,14 @@ body {
   font-size: clamp(0.9rem, 2vw, 1.1rem);
   letter-spacing: 0.2em;
   color: var(--gray);
-  margin-top: clamp(2rem, 10vw, 36rem);
+  margin-top: 36rem;
   text-align: center;
 }
 
 .hero-btns {
   display: flex;
   gap: 1.5rem;
-  margin-top: clamp(2rem, 8vw, 24rem);
+  margin-top:24rem;
   align-items: center;
   z-index: 2;
   position: relative;
@@ -158,7 +161,7 @@ body {
   position: relative;
   width: max-content;
   z-index: 2;
-  margin-bottom: 0;
+  margin-bottom: -100rem;
 }
 
 .hero-btn-outline {
@@ -223,8 +226,11 @@ body {
   width: 0.5px;
   height: 150px;
   background: var(--black);
-  margin: 1.5rem auto;
-  display: block;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-left: 37.5rem;
 }
 
 @keyframes breathe {
@@ -246,7 +252,7 @@ body {
 
 /* Common section styles */
 section {
-  padding: clamp(3rem, 6vw, 7rem) 4vw clamp(2rem, 4vw, 4rem);
+  padding: 7rem 4vw 4rem;
 }
 
 .section-label {
@@ -428,7 +434,7 @@ section {
 
 /* About page */
 .about-wrap {
-  padding-top: clamp(4rem, 8vw, 15rem);
+  padding-top: 15rem;
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -439,6 +445,11 @@ section {
   position: relative;
   min-height: 80vh;
 }
+
+/*.about-image-col .media-card {
+  height: 100%;
+  aspect-ratio: unset;
+}*/
 
 .about-text-col {
   padding: 4rem 3rem 4rem 4rem;
@@ -520,7 +531,7 @@ section {
 }
 
 .feature {
-  font-weight: 300;
+  ont-weight: 300;
   font-family: 'satoshi', sans-serif;
   font-size: 1rem;
   letter-spacing: 0.15em;
@@ -614,7 +625,7 @@ section {
   font-size: 0.95rem;
   letter-spacing: 0.1em;
   color: var(--gray);
-  margin-top: 0.6rem;
+  margin-top=: 0.6rem;
 }
 
 .gallery-grid-main {
@@ -794,31 +805,29 @@ footer span {
 /* Tablet and iPad optimization */
 @media (max-width: 768px) {
   .topnav {
-    padding: 1rem 1.5rem;
+    padding: 1.2rem 1.5rem;
   }
 
   .hero-name {
-    padding-top: clamp(6rem, 12vw, 12rem);
+    padding-top: 12rem;
     font-size: clamp(2rem, 6vw, 4rem);
   }
 
   .hero-sub {
-    margin-top: clamp(4rem, 8vw, 8rem);
+    margin-top: 8rem;
     font-size: clamp(0.8rem, 2vw, 1rem);
   }
 
   .hero-btns {
-    margin-top: clamp(2rem, 6vw, 10rem);
+    margin-top: 10rem;
   }
 
   .scroll-hint {
-    top: 55%;
-    display: none;
+    top: 35rem;
   }
 
   .about-wrap {
     grid-template-columns: 1fr;
-    padding-top: clamp(4rem, 8vw, 10rem);
   }
 
   .about-image-col {
@@ -856,7 +865,7 @@ footer span {
   }
 
   section {
-    padding: clamp(2rem, 5vw, 4rem) 3vw clamp(1rem, 3vw, 2rem);
+    padding: 4rem 3vw 2rem;
   }
 }
 
@@ -874,15 +883,9 @@ footer span {
     overflow-x: hidden;
   }
 
-  /* Ensure minimum touch target size */
-  button, 
-  a {
-    min-height: 44px;
-  }
-
   /* Navigation */
   .topnav {
-    padding: 0.8rem 1rem;
+    padding: 1rem 1rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -901,7 +904,7 @@ footer span {
   }
 
   section {
-    padding: clamp(2rem, 5vw, 3rem) clamp(3vw, 4vw, 4vw) clamp(1.5rem, 3vw, 2rem);
+    padding: 3rem 3.5vw 2rem;
   }
 
   /* Hero section */
@@ -911,46 +914,42 @@ footer span {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 4rem;
+    padding-top: 5rem;
   }
 
   .hero-name {
     font-size: clamp(1.8rem, 5vw, 3rem);
-    padding-top: 1.5rem;
+    padding-top: 6rem;
     text-align: center;
     line-height: 1.2;
   }
 
   .hero-sub {
     font-size: clamp(0.7rem, 1.8vw, 0.9rem);
-    margin-top: 1rem;
+    margin-top: 2rem;
     letter-spacing: 0.2em;
   }
 
   .hero-btns {
     flex-direction: column;
-    gap: 0.75rem;
-    margin-top: 1.5rem;
+    gap: 1rem;
+    margin-top: 3rem;
     width: 100%;
-    max-width: 240px;
+    max-width: 200px;
     margin-left: auto;
     margin-right: auto;
   }
 
   .hero-btn {
     width: 100%;
-    padding: 0.8rem 1.5rem;
+    padding: 0.75rem 1.5rem;
     font-size: 0.6rem;
     margin-bottom: 0 !important;
-    min-height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   .scroll-hint {
-    top: 75%;
-    display: none;
+    top: 65%;
+    font-size: 0.5rem;
   }
 
   .scroll-line {
@@ -972,18 +971,18 @@ footer span {
   /* About section */
   .about-wrap {
     grid-template-columns: 1fr;
-    padding-top: 2rem;
+    padding-top: 8rem;
     min-height: auto;
     gap: 0;
   }
 
   .about-image-col {
-    min-height: 35vh;
+    min-height: 40vh;
     margin-bottom: 0;
   }
 
   .about-text-col {
-    padding: 1.5rem 1rem;
+    padding: 2rem 1rem;
     border-left: none;
     border-top: 0.5px solid rgba(0, 0, 0, 0.1);
     text-align: left;
@@ -996,16 +995,16 @@ footer span {
   }
 
   .about-heading {
-    font-size: clamp(1.3rem, 3vw, 2rem);
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
     letter-spacing: 0.05em;
     line-height: 1.2;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   .about-body {
-    font-size: 0.9rem;
-    line-height: 1.5;
-    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
   }
 
   .about-divider {
@@ -1019,36 +1018,36 @@ footer span {
 
   /* Gallery */
   .gallery-hero {
-    padding-top: 1.5rem;
-    padding-bottom: 1rem;
-    row-gap: 15px;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    row-gap: 20px;
   }
 
   .gallery-title {
-    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
     letter-spacing: 0.2em;
   }
 
   .feature {
-    font-size: 0.8rem;
-    margin-top: 0.4rem;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
   }
 
   .covenant {
-    font-size: clamp(1.8rem, 5vw, 3.5rem);
+    font-size: clamp(2rem, 6vw, 4rem);
     line-height: 1.1;
   }
 
   .gallery-sub {
-    font-size: 0.8rem;
-    margin-top: 0.4rem;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
   }
 
   /* Media cards */
   .editorial-grid {
     grid-template-columns: 1fr;
-    gap: 0.8rem;
-    margin-top: 0.8rem;
+    gap: 1rem;
+    margin-top: 1rem;
   }
 
   .editorial-grid .hero-piece {
@@ -1057,24 +1056,24 @@ footer span {
 
   .masonry-row {
     grid-template-columns: 1fr;
-    gap: 0.8rem;
-    margin-top: 0.8rem;
+    gap: 1rem;
+    margin-top: 1rem;
   }
 
   .portrait-row {
     grid-template-columns: 1fr 1fr;
-    gap: 0.8rem;
+    gap: 1rem;
   }
 
   .wide-row {
     grid-template-columns: 1fr;
-    gap: 0.8rem;
+    gap: 1rem;
   }
 
   .gallery-grid-main {
     grid-template-columns: 1fr 1fr;
-    gap: 0.6rem;
-    margin-bottom: 0.6rem;
+    gap: 0.8rem;
+    margin-bottom: 0.8rem;
   }
 
   .gallery-grid-main .span-col {
@@ -1083,13 +1082,13 @@ footer span {
 
   .gallery-row-2 {
     grid-template-columns: 1fr 1fr;
-    gap: 0.6rem;
-    margin-bottom: 0.6rem;
+    gap: 0.8rem;
+    margin-bottom: 0.8rem;
   }
 
   .gallery-row-3 {
     grid-template-columns: 1fr 1fr;
-    gap: 0.6rem;
+    gap: 0.8rem;
   }
 
   .card-tall,
@@ -1123,8 +1122,8 @@ footer span {
   /* Explore button */
   .explore-button {
     width: 100%;
-    margin-top: -1.5rem;
-    padding: 0.7rem 1.2rem;
+    margin-top: -3rem;
+    padding: 0.7rem 1.5rem;
     font-size: 0.6rem;
   }
 
@@ -1133,7 +1132,7 @@ footer span {
     gap: 1rem;
     padding: 0.5rem 0;
     top: 60px;
-    position: sticky;
+    sticky-top: 60px;
   }
 
   .season-header {
@@ -1155,9 +1154,9 @@ footer span {
 
   /* Footer */
   footer {
-    padding: 1.5rem 1.5vw;
+    padding: 2rem 2vw;
     flex-direction: column;
-    gap: 0.8rem;
+    gap: 1rem;
     text-align: center;
   }
 
