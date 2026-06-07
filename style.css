@@ -222,17 +222,6 @@ body {
   background: var(--black);
 }
 
-.scroll-line-2 {
-  width: 0.5px;
-  height: 150px;
-  background: var(--black);
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  margin-left: 37.5rem;
-}
-
 @keyframes breathe {
   0%,
   100% {
