@@ -310,11 +310,13 @@ section {
 
 /* Media cards */
 .media-card {
-  position: relative;
+  position: relaive;
   overflow: hidden;
   background: #e8e8d8;
   z-index: 0;
 }
+
+
 
 .media-card::after {
   content: '';
@@ -624,7 +626,7 @@ section {
 
 .gallery-grid-main {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr;
+  grid-template-columns: 1.5\fr 1fr 1fr;
   gap: 1.2rem;
   margin-bottom: 1.2rem;
 }
