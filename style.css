@@ -341,6 +341,11 @@ section {
   transform: scale(1.04);
 }
 
+.card-tall1 {
+  width: 700px;
+  height: 400px;
+  align-items: center;
+}
 .card-tall {
   aspect-ratio: 3 / 4;
 }
@@ -1080,7 +1085,6 @@ footer span {
     gap: 0.8rem;
   }
 
-  .card-tall,
   .card-square,
   .card-landscape,
   .card-portrait-tall {
